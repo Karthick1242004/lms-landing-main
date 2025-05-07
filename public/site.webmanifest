@@ -1,0 +1,22 @@
+{
+  "name": "Your Company name",
+  "short_name": "TCC",
+  "description": "Enterprise Application Development and Data Analytics Solutions",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#003F91",
+  "icons": [
+    {
+      "src": "https://sjc.microlink.io/mYCnMvn4eh1KBbmRJbeMoc8fOoYiZcTNZA8NapKs8KHh18R-5NSEcLBWHTk_B2YGUVtxYAqIYsCNxX92LJCrpQ.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/android-chrome-512x512-j0AsQlGBmYZp21mXOaoU5F2UTL0GLT.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+
