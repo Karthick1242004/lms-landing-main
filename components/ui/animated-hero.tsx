@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { BookOpen } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { SparklesCore } from "@/components/ui/sparkles"
+import Link from "next/link"
 
 function Hero() {
   const [titleNumber, setTitleNumber] = useState(0)
@@ -80,9 +81,11 @@ function Hero() {
             </p>
           </div>
           <div className="flex flex-row gap-3">
+            <Link href="https://lms-front-app.vercel.app/">
             <Button size="lg" className="gap-4">
               Get Started <BookOpen className="w-4 h-4" />
             </Button>
+            </Link>
           </div>
         </div>
       </div>
