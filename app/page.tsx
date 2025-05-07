@@ -15,24 +15,24 @@ import { AnimatePresence } from "framer-motion"
 
 const FAQS = [
   {
-    question: "What services do you offer?",
+    question: "What types of courses can I create on Quantum Path LMS?",
     answer:
-      "We offer a comprehensive range of cloud solutions including web application development, data analytics, cloud infrastructure management, and custom software solutions tailored to your business needs.",
+      "You can create a wide variety of courses including video-based lectures, text content, interactive quizzes, assignments, discussion-based learning, and blended learning experiences. Our platform supports multiple content formats to accommodate different teaching styles and learning preferences.",
   },
   {
-    question: "How do you ensure data security?",
+    question: "How does Quantum Path LMS handle student data and privacy?",
     answer:
-      "We implement industry-standard security protocols, regular security audits, encrypted data transmission, and follow best practices for secure cloud computing to protect your valuable data.",
+      "We take data privacy seriously. Quantum Path LMS is compliant with major educational data privacy regulations. All student data is encrypted, stored securely, and only accessible to authorized instructors and administrators. We never sell user data to third parties.",
   },
   {
-    question: "What is your development process?",
+    question: "Can I integrate Quantum Path with other educational tools?",
     answer:
-      "Our development process follows an agile methodology with regular client communication, iterative development cycles, and continuous integration/deployment practices to ensure high-quality deliverables.",
+      "Yes, Quantum Path LMS offers robust integration capabilities with popular educational tools, video conferencing platforms, content libraries, and student information systems. Our API allows for custom integrations to fit your specific workflow needs.",
   },
   {
-    question: "Do you provide ongoing support?",
+    question: "Is technical support available for both instructors and students?",
     answer:
-      "Yes, we offer comprehensive support and maintenance services to ensure your applications run smoothly. Our team is available to address any issues and implement updates as needed.",
+      "Absolutely! We provide comprehensive support for all users. Instructors have access to our dedicated support team, extensive documentation, and training resources. Students can access our help center and receive support through their institution's administrators.",
   },
 ]
 
@@ -43,9 +43,9 @@ export default function Home() {
   const navItems = [
     { name: "Home", url: "#home", icon: Cloud },
     { name: "About", url: "#about", icon: Info },
-    { name: "Services", url: "#services", icon: Server },
+    { name: "Features", url: "#services", icon: Server },
     { name: "FAQ", url: "#faq", icon: MessageCircle },
-    { name: "Careers", url: "#careers", icon: Briefcase },
+    { name: "Plans", url: "#careers", icon: Briefcase },
     { name: "Contact", url: "#contact", icon: Phone },
   ]
 

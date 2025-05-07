@@ -111,7 +111,7 @@ export function NavBar({ items, className, activeSection }: NavBarProps) {
               fill="#FF6700"
             />
           </svg>
-          <span className="font-semibold text-sm whitespace-nowrap">Your Comapany Name</span>
+          <span className="font-semibold text-sm whitespace-nowrap">Quantum Path</span>
         </div>
 
         {/* Navigation Items */}

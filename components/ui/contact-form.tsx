@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Mail, Phone, MapPin, ArrowRight } from "lucide-react"
+import { Mail, Phone, MapPin, ArrowRight, BookOpen, Headphones, School } from "lucide-react"
 import { Button } from "./button"
 import { SectionHeading } from "@/components/ui/section-heading"
 
@@ -12,7 +12,7 @@ interface ContactFormData {
   name: string
   email: string
   phone: string
-  service: string
+  inquiry: string
   message: string
 }
 
@@ -21,7 +21,7 @@ export function ContactForm() {
     name: "",
     email: "",
     phone: "",
-    service: "",
+    inquiry: "",
     message: "",
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -36,7 +36,7 @@ export function ContactForm() {
       // Here you would typically send the form data to your server
       await new Promise((resolve) => setTimeout(resolve, 1000)) // Simulate API call
       console.log("Form submitted:", formData)
-      setFormData({ name: "", email: "", phone: "", service: "", message: "" })
+      setFormData({ name: "", email: "", phone: "", inquiry: "", message: "" })
       setFormStatus("success")
     } catch (error) {
       console.error("Error submitting form:", error)
@@ -55,8 +55,8 @@ export function ContactForm() {
     <section className="py-12 md:py-16 relative z-10" id="contact">
       <div className="container px-4 md:px-6 max-w-6xl mx-auto">
         <SectionHeading
-          title={`Let's work together${"."}`}
-          description="Ready to start your next project? Get in touch and let's create something amazing."
+          title="Get in Touch"
+          description="Have questions about Quantum Path LMS? We're here to help you find the perfect learning solution."
           align="center"
           titleClassName="mb-4"
           descriptionClassName="text-base mb-8"
@@ -103,26 +103,27 @@ export function ContactForm() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder="Enter your mobile number"
+                  placeholder="Enter your phone number (optional)"
                   className="w-full rounded-lg border bg-background px-3 py-4 text-sm border-border focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-muted-foreground"
                 />
               </div>
               <div>
                 <select
-                  id="service"
-                  name="service"
-                  value={formData.service}
+                  id="inquiry"
+                  name="inquiry"
+                  value={formData.inquiry}
                   onChange={handleChange}
                   required
                   className="w-full rounded-lg border bg-background px-3 py-4 text-sm border-border focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-muted-foreground"
                 >
                   <option value="" disabled>
-                    Select a service
+                    Select your inquiry type
                   </option>
-                  <option value="web-app">Web/Native App Development</option>
-                  <option value="data-analytics">Data Analytics</option>
-                  <option value="data-integration">Data Integration</option>
-                  <option value="custom-solutions">Custom Solutions</option>
+                  <option value="product-demo">Request a Product Demo</option>
+                  <option value="pricing">Pricing Information</option>
+                  <option value="educational">Educational Institution Inquiry</option>
+                  <option value="integration">Integration Questions</option>
+                  <option value="support">Technical Support</option>
                   <option value="other">Other</option>
                 </select>
               </div>
@@ -132,7 +133,7 @@ export function ContactForm() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell us about your project or inquiry"
+                  placeholder="Tell us about your learning needs or questions"
                   required
                   rows={4}
                   className="w-full rounded-lg border bg-background px-3 py-4 text-sm border-border focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-muted-foreground"
@@ -140,7 +141,7 @@ export function ContactForm() {
               </div>
 
               {formStatus === "success" && (
-                <div className="text-sm text-green-500">Your message has been sent successfully!</div>
+                <div className="text-sm text-green-500">Your message has been sent successfully! We'll get back to you soon.</div>
               )}
 
               {formStatus === "error" && (
@@ -165,64 +166,64 @@ export function ContactForm() {
           </div>
 
           <div className="space-y-5">
-            {/* Jobs & Internships */}
+            {/* Educational Institutions */}
             <div className="p-6 rounded-lg border border-border bg-card transition-all duration-300 hover:shadow-md hover:border-primary/20 group">
               <h3 className="text-xl font-semibold mb-4 group-hover:text-primary transition-colors">
-                For Jobs & Internships
+                For Educational Institutions
               </h3>
               <div className="space-y-3">
                 <a
-                  href="mailto:hr@thecloud.company"
+                  href="mailto:education@quantumpath.com"
                   className="flex items-center gap-3 text-base hover:text-primary transition-colors"
                 >
-                  <Mail className="h-5 w-5 text-muted-foreground group-hover:text-primary/70 transition-colors" />
-                  yourcompany@mail.com
+                  <School className="h-5 w-5 text-muted-foreground group-hover:text-primary/70 transition-colors" />
+                  education@quantumpath.com
                 </a>
               </div>
             </div>
 
-            {/* Sales Enquiries */}
+            {/* Support */}
             <div className="p-6 rounded-lg border border-border bg-card transition-all duration-300 hover:shadow-md hover:border-primary/20 group">
               <h3 className="text-xl font-semibold mb-4 group-hover:text-primary transition-colors">
-                For Sales Enquiries
+                Technical Support
               </h3>
               <div className="space-y-3">
                 <a
-                  href="mailto:hello@thecloud.company"
+                  href="mailto:support@quantumpath.com"
                   className="flex items-center gap-3 text-base hover:text-primary transition-colors"
                 >
-                  <Mail className="h-5 w-5 text-muted-foreground group-hover:text-primary/70 transition-colors" />
-                  yourcompany@mail.com
+                  <Headphones className="h-5 w-5 text-muted-foreground group-hover:text-primary/70 transition-colors" />
+                  support@quantumpath.com
                 </a>
               </div>
             </div>
 
-            {/* Address */}
+            {/* Demo Requests */}
             <div className="p-6 rounded-lg border border-border bg-card transition-all duration-300 hover:shadow-md hover:border-primary/20 group">
-              <h3 className="text-xl font-semibold mb-4 group-hover:text-primary transition-colors">Our Address</h3>
+              <h3 className="text-xl font-semibold mb-4 group-hover:text-primary transition-colors">
+                Schedule a Demo
+              </h3>
               <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-1 group-hover:text-primary/70 transition-colors" />
-                  <div className="space-y-2">
-                    <p className="text-base">Street Addrress with city</p>
-                    <a
-                      href="https://folio-lynkr-main.vercel.app/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
-                    >
-                      Get Directions
-                      <ArrowRight className="h-4 w-4" />
-                    </a>
-                  </div>
-                </div>
                 <a
-                  href="tel:+918072558132"
+                  href="mailto:demo@quantumpath.com"
+                  className="flex items-center gap-3 text-base hover:text-primary transition-colors"
+                >
+                  <BookOpen className="h-5 w-5 text-muted-foreground group-hover:text-primary/70 transition-colors" />
+                  demo@quantumpath.com
+                </a>
+                <a
+                  href="tel:+1234567890"
                   className="flex items-center gap-3 text-base hover:text-primary transition-colors"
                 >
                   <Phone className="h-5 w-5 text-muted-foreground group-hover:text-primary/70 transition-colors" />
-                  +91 1234567890
+                  +1 (234) 567-890
                 </a>
+                <div className="flex items-start gap-3 mt-2">
+                  <MapPin className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-1 group-hover:text-primary/70 transition-colors" />
+                  <div>
+                    <p className="text-base">123 Education Ave, Suite 200<br />Learning City, ED 12345</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

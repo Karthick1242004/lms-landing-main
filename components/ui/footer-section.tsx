@@ -1,7 +1,7 @@
 "use client"
 import { Button } from "@/components/ui/button"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
+import { Facebook, Instagram, Linkedin, Twitter, BookOpen } from "lucide-react"
 import { BackgroundBeamsWithCollision } from "./background-beams-with-collision"
 
 function Footerdemo() {
@@ -12,9 +12,12 @@ function Footerdemo() {
           <div className="grid gap-12 md:grid-cols-3">
             {/* Company Info */}
             <div>
-              <h2 className="text-2xl font-bold mb-4">Your Company Name</h2>
+              <div className="flex items-center gap-2 mb-4">
+                <BookOpen className="h-6 w-6 text-primary" />
+                <h2 className="text-2xl font-bold">Quantum Path</h2>
+              </div>
               <p className="text-sm text-muted-foreground mb-6">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci id hic laudantium optio distinctio mollitia? Soluta illo adipisci error iste neque nihil commodi, ducimus culpa impedit perferendis hic iure? Quo!
+                Quantum Path is a modern Learning Management System designed to empower educators and learners. Our platform provides intuitive tools for course creation, student engagement, and educational achievement.
               </p>
             </div>
 
@@ -29,23 +32,29 @@ function Footerdemo() {
                   About
                 </a>
                 <a href="#services" className="transition-colors hover:text-primary">
-                  Services
+                  Features
                 </a>
                 <a href="#faq" className="transition-colors hover:text-primary">
                   FAQ
                 </a>
                 <a href="#careers" className="transition-colors hover:text-primary">
-                  Careers
+                  Pricing
                 </a>
                 <a href="#contact" className="transition-colors hover:text-primary">
                   Contact
+                </a>
+                <a href="/terms-of-service" className="transition-colors hover:text-primary">
+                  Terms of Service
+                </a>
+                <a href="/privacy-policy" className="transition-colors hover:text-primary">
+                  Privacy Policy
                 </a>
               </nav>
             </div>
 
             {/* Social Media */}
             <div className="relative">
-              <h3 className="mb-4 text-lg font-semibold">Follow Us</h3>
+              <h3 className="mb-4 text-lg font-semibold">Stay Connected</h3>
               <div className="mb-6 flex space-x-4">
                 <TooltipProvider>
                   <Tooltip>
@@ -63,7 +72,7 @@ function Footerdemo() {
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <a href="https://x.com/TheCloudCom" target="_blank" rel="noopener noreferrer">
+                      <a href="#" target="_blank" rel="noopener noreferrer">
                         <Button variant="outline" size="icon" className="rounded-full">
                           <Twitter className="h-4 w-4" />
                           <span className="sr-only">Twitter</span>
@@ -78,7 +87,7 @@ function Footerdemo() {
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <a href="https://www.instagram.com/thecloud.company/" target="_blank" rel="noopener noreferrer">
+                      <a href="#" target="_blank" rel="noopener noreferrer">
                         <Button variant="outline" size="icon" className="rounded-full">
                           <Instagram className="h-4 w-4" />
                           <span className="sr-only">Instagram</span>
@@ -104,11 +113,34 @@ function Footerdemo() {
                   </Tooltip>
                 </TooltipProvider>
               </div>
+              <div className="mt-6">
+                <h3 className="mb-4 text-lg font-semibold">Newsletter</h3>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Subscribe to our newsletter for the latest updates and educational resources.
+                </p>
+                <form className="flex gap-2">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    className="flex-1 rounded-md border border-border px-3 py-2 text-sm"
+                    required
+                  />
+                  <Button type="submit" size="sm">
+                    Subscribe
+                  </Button>
+                </form>
+              </div>
             </div>
           </div>
           <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t pt-8 text-center md:flex-row">
-            <p className="text-sm text-muted-foreground">© 2025 Your Company. All rights reserved.</p>
+            <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Quantum Path LMS. All rights reserved.</p>
             <nav className="flex gap-4 text-sm">
+              <a href="/terms-of-service" className="transition-colors hover:text-primary">
+                Terms
+              </a>
+              <a href="/privacy-policy" className="transition-colors hover:text-primary">
+                Privacy
+              </a>
               <a href="#" className="transition-colors hover:text-primary">
                 Cookie Settings
               </a>

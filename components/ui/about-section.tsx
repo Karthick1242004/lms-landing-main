@@ -29,7 +29,7 @@ export function AboutSection() {
     <section id="about" className="py-12 md:py-16 relative z-10 bg-gradient-to-b from-background to-background/50">
       {/* About Us */}
       <div className="container mx-auto px-4 max-w-6xl">
-        <SectionHeading title="About Us" className="mb-10" titleClassName="text-2xl md:text-3xl" />
+        <SectionHeading title="About Quantum Path" className="mb-10" titleClassName="text-2xl md:text-3xl" />
 
         <div className="grid md:grid-cols-1 gap-8 items-center">
           <motion.div
@@ -40,10 +40,10 @@ export function AboutSection() {
             className="space-y-6 text-center mx-auto max-w-4xl"
           >
             <h2 className="text-xl md:text-xl font-normal tracking-tight">
-              We're a team of tech enthusiasts redefining enterprise application development.
+              Transforming education through technology and innovation
             </h2>
-            <p className="text-muted-foreground  text-sm">
-              A detailed description of your company here to provide a better view of what you offer 
+            <p className="text-muted-foreground text-sm">
+              Quantum Path is a comprehensive Learning Management System designed to empower educators, trainers, and organizations. Our platform combines intuitive design with powerful features to create engaging learning experiences for students and professionals alike.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 pt-6 justify-center max-w-6xl mx-auto">
@@ -58,9 +58,9 @@ export function AboutSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                 >
-                  <Counter from={0} to={25} duration={2} />+
+                  <Counter from={0} to={500} duration={2} />+
                 </motion.span>
-                <span className="text-xs md:text-sm text-muted-foreground text-center">Team Members</span>
+                <span className="text-xs md:text-sm text-muted-foreground text-center">Active Courses</span>
               </motion.div>
 
               <motion.div
@@ -74,9 +74,9 @@ export function AboutSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                 >
-                  <Counter from={0} to={2000} duration={2} />+
+                  <Counter from={0} to={50000} duration={2} />+
                 </motion.span>
-                <span className="text-xs md:text-sm text-muted-foreground text-center">Hours Billed</span>
+                <span className="text-xs md:text-sm text-muted-foreground text-center">Students Enrolled</span>
               </motion.div>
 
               <motion.div
@@ -90,9 +90,9 @@ export function AboutSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                 >
-                  <Counter from={0} to={25} duration={2} />+
+                  <Counter from={0} to={200} duration={2} />+
                 </motion.span>
-                <span className="text-xs md:text-sm text-muted-foreground text-center">Projects Delivered</span>
+                <span className="text-xs md:text-sm text-muted-foreground text-center">Educational Partners</span>
               </motion.div>
 
               <motion.div
@@ -106,9 +106,9 @@ export function AboutSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                 >
-                  <Counter from={0} to={10} duration={2} />+
+                  <Counter from={0} to={15} duration={2} />+
                 </motion.span>
-                <span className="text-xs md:text-sm text-muted-foreground text-center">Clients Served</span>
+                <span className="text-xs md:text-sm text-muted-foreground text-center">Countries Served</span>
               </motion.div>
             </div>
           </motion.div>
@@ -118,7 +118,7 @@ export function AboutSection() {
       {/* Mission & Vision */}
       <div className="py-12 mt-8">
         <div className="container mx-auto px-4 max-w-6xl">
-          <SectionHeading title="Our Mission & Vision" titleClassName="text-2xl md:text-3xl" />
+          <SectionHeading title="Our Educational Philosophy" titleClassName="text-2xl md:text-3xl" />
 
           <div className="grid md:grid-cols-2 gap-8">
             <motion.div
@@ -133,20 +133,20 @@ export function AboutSection() {
               </div>
               <h3 className="text-lg font-bold mb-3">Our Mission</h3>
               <p className="text-muted-foreground text-sm mb-3">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus consequatur numquam, ad fugit praesentium esse 
+                To democratize education by providing accessible, engaging, and effective learning experiences for everyone, regardless of location or background.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2 group">
                   <ArrowRight className="h-4 w-4 text-primary flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
-                  <span className="text-sm">Provide off-the-shelf and customized solutions</span>
+                  <span className="text-sm">Make quality education accessible to all</span>
                 </li>
                 <li className="flex items-start gap-2 group">
                   <ArrowRight className="h-4 w-4 text-primary flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
-                  <span className="text-sm">Focus on understanding clients' unique needs</span>
+                  <span className="text-sm">Empower educators with powerful, easy-to-use tools</span>
                 </li>
                 <li className="flex items-start gap-2 group">
                   <ArrowRight className="h-4 w-4 text-primary flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
-                  <span className="text-sm">Deliver cost-effective solutions that drive efficiency and growth</span>
+                  <span className="text-sm">Foster a global community of lifelong learners</span>
                 </li>
               </ul>
             </motion.div>
@@ -163,20 +163,20 @@ export function AboutSection() {
               </div>
               <h3 className="text-lg font-bold mb-3">Our Vision</h3>
               <p className="text-muted-foreground text-sm mb-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus consequatur numquam, ad fugit praesentium esse 
+                To create a world where continuous learning is accessible, enjoyable, and leads to personal and professional growth for individuals and organizations.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2 group">
                   <ArrowRight className="h-4 w-4 text-primary flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
-                  <span className="text-sm">Enable growth and competitiveness for all businesses</span>
+                  <span className="text-sm">Revolutionize how knowledge is shared and acquired</span>
                 </li>
                 <li className="flex items-start gap-2 group">
                   <ArrowRight className="h-4 w-4 text-primary flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
-                  <span className="text-sm">Guide businesses through digital transformation</span>
+                  <span className="text-sm">Personalize learning experiences through technology</span>
                 </li>
                 <li className="flex items-start gap-2 group">
                   <ArrowRight className="h-4 w-4 text-primary flex-shrink-0 mt-0.5 group-hover:translate-x-1 transition-transform" />
-                  <span className="text-sm">Help businesses stay ahead of industry trends and competition</span>
+                  <span className="text-sm">Build a platform that grows and adapts with educational needs</span>
                 </li>
               </ul>
             </motion.div>

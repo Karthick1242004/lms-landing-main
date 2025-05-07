@@ -8,32 +8,32 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    default: "Company Name | TagLine",
-    template: "%s | Company Name",
+    default: "Quantum Path | Learning Management System",
+    template: "%s | Quantum Path LMS",
   },
   description:
-    "Companies description",
-  keywords: ["enterprise applications", "data analytics", "web development", "cloud solutions", "custom software"],
-  authors: [{ name: "Company name" }],
-  creator: "Company name",
-  publisher: "Company name",
+    "Quantum Path is a modern Learning Management System designed to empower educators and learners with intuitive tools for course creation, student engagement, and educational achievement.",
+  keywords: ["learning management system", "online education", "e-learning", "course creation", "educational platform", "LMS"],
+  authors: [{ name: "Quantum Path" }],
+  creator: "Quantum Path",
+  publisher: "Quantum Path",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://thecloud.company"),
+  metadataBase: new URL("https://quantumpath.com"),
   openGraph: {
-    title: "Company Name | TagLine",
-    description: "Transform your business with our cutting-edge enterprise solutions and data analytics applications.",
-    url: "https://thecloud.company",
-    siteName: "Company Name",
+    title: "Quantum Path | Learning Management System",
+    description: "Transform education with our modern Learning Management System designed for instructors and institutions.",
+    url: "https://quantumpath.com",
+    siteName: "Quantum Path LMS",
     images: [
       {
         url: "https://sjc.microlink.io/mYCnMvn4eh1KBbmRJbeMoc8fOoYiZcTNZA8NapKs8KHh18R-5NSEcLBWHTk_B2YGUVtxYAqIYsCNxX92LJCrpQ.jpeg",
         width: 1200,
         height: 630,
-        alt: "Company Name",
+        alt: "Quantum Path LMS",
       },
     ],
     locale: "en_US",
@@ -41,12 +41,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Company Name | TagLine",
-    description: "Transform your business with our cutting-edge enterprise solutions and data analytics applications.",
+    title: "Quantum Path | Learning Management System",
+    description: "Transform education with our modern Learning Management System designed for instructors and institutions.",
     images: [
       "https://sjc.microlink.io/mYCnMvn4eh1KBbmRJbeMoc8fOoYiZcTNZA8NapKs8KHh18R-5NSEcLBWHTk_B2YGUVtxYAqIYsCNxX92LJCrpQ.jpeg",
     ],
-    creator: "@companyname",
+    creator: "@quantumpath",
   },
   // Discord and Slack use the Open Graph protocol
   // Facebook (Meta) specific
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/site.webmanifest",
-    generator: 'v0.dev'
+    generator: 'Quantum Path'
 }
 
 export const viewport = {
@@ -116,7 +116,7 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
-        <link rel="canonical" href="https://thecloud.company" />
+        <link rel="canonical" href="https://quantumpath.com" />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>

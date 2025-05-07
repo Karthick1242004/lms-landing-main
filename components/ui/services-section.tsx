@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useEffect, useRef } from "react"
-import { Database, Server, Code, Settings } from "lucide-react"
+import { BookOpen, Calendar, Award, Users } from "lucide-react"
 import { motion } from "framer-motion"
 import { SectionHeading } from "@/components/ui/section-heading"
 import { GlowingEffect } from "@/components/ui/glowing-effect"
@@ -85,31 +85,31 @@ export function ServicesSection({ onInView }: ServicesProps) {
 
   const services = [
     {
-      icon: <Code className="h-7 w-7" />,
-      title: "Service providing One",
+      icon: <BookOpen className="h-7 w-7" />,
+      title: "Course Management",
       description:
-        "Take control of your data with our custom web apps. Our web apps provide accessibility from any device with a web browser.",
+        "Easily create, organize, and deliver engaging course content. Our intuitive interface makes managing your educational materials simple and efficient.",
       animation: "/animations/typescript.json",
     },
     {
-      icon: <Database className="h-7 w-7" />,
-      title: "Service providing Two",
+      icon: <Calendar className="h-7 w-7" />,
+      title: "Learning Schedules",
       description:
-        "Unlock the full potential of your data with our advanced analytics techniques. From predictive modelling to data visualisation. ",
+        "Schedule classes, set deadlines, and manage learning paths. Help your students stay on track with automated reminders and progress tracking.",
       animation: "/animations/data-usage.json",
     },
     {
-      icon: <Server className="h-7 w-7" />,
-      title: "Service providing Three",
+      icon: <Award className="h-7 w-7" />,
+      title: "Assessments & Certifications",
       description:
-        "Get a unified view of your data with our integration services. We can connect data from various sources like databases, CRMs, ERPs and APIs.",
+        "Create quizzes, assignments, and issue certifications. Track student progress with comprehensive analytics and reporting tools.",
       animation: "/animations/server.json",
     },
     {
-      icon: <Settings className="h-7 w-7" />,
-      title: "Service providing Four",
+      icon: <Users className="h-7 w-7" />,
+      title: "Collaborative Learning",
       description:
-        "We deliver tailor-made solutions that might involve more than one of our offerings, to meet your unique use-cases and data analytics needs.",
+        "Foster engagement with discussion forums, group projects, and interactive learning experiences. Build a community around your educational content.",
       animation: "/animations/solution.json",
     },
   ]
@@ -118,8 +118,8 @@ export function ServicesSection({ onInView }: ServicesProps) {
     <section ref={sectionRef} id="services" className="relative z-10 py-12 md:py-16">
       <div className="container mx-auto px-4 max-w-6xl">
         <SectionHeading
-          title="Our Services"
-          description="From custom web apps to data analytics, we deliver cutting-edge solutions tailored to your specific needs. Explore our services now and turn your data into actionable insights and a competitive advantage."
+          title="Key Features"
+          description="Quantum Path LMS provides a comprehensive suite of tools designed to enhance the learning experience. From course creation to student engagement, our platform offers everything you need to deliver exceptional educational content."
           className="mb-12"
           titleClassName="text-2xl md:text-3xl"
           descriptionClassName="text-base text-sm font-normal"
