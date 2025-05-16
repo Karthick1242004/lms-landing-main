@@ -22,11 +22,11 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://quantumpath.com"),
+  metadataBase: new URL("https://quantam-path.vercel.app/"),
   openGraph: {
     title: "Quantum Path | Learning Management System",
     description: "Transform education with our modern Learning Management System designed for instructors and institutions.",
-    url: "https://quantumpath.com",
+    url: "https://quantam-path.vercel.app/",
     siteName: "Quantum Path LMS",
     images: [
       {
@@ -62,36 +62,36 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/favicon-16x16-wKlEvJnqRpBlcdT9ULn3RBx7lMXID3.png",
+        url: "https://folio-lynkr-main.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F33.42e81fdb.png&w=256&q=75",
         sizes: "16x16",
         type: "image/png",
       },
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/favicon-32x32-wf9MApwO0kQMoqXqarDkm9lKzHuiQg.png",
+        url: "https://folio-lynkr-main.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F33.42e81fdb.png&w=256&q=75",
         sizes: "32x32",
         type: "image/png",
       },
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/android-chrome-192x192-OX8MQjAlsTa6O0uUOVc5Gx3jaWqeA0.png",
+        url: "https://folio-lynkr-main.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F33.42e81fdb.png&w=256&q=75",
         sizes: "192x192",
         type: "image/png",
       },
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/android-chrome-512x512-j0AsQlGBmYZp21mXOaoU5F2UTL0GLT.png",
+        url: "https://folio-lynkr-main.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F33.42e81fdb.png&w=256&q=75",
         sizes: "512x512",
         type: "image/png",
       },
     ],
     apple: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/apple-touch-icon-t3iE1AK0ATNgSxW1Yj6PHzxyUCtEdq.png",
+        url: "https://folio-lynkr-main.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F33.42e81fdb.png&w=256&q=75",
         sizes: "180x180",
         type: "image/png",
       },
     ],
     shortcut: [
       {
-        url: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/favicon-32x32-wf9MApwO0kQMoqXqarDkm9lKzHuiQg.png",
+        url: "https://folio-lynkr-main.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F33.42e81fdb.png&w=256&q=75",
       },
     ],
   },
@@ -116,7 +116,7 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
-        <link rel="canonical" href="https://quantumpath.com" />
+        <link rel="canonical" href="https://quantam-path.vercel.app/" />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
