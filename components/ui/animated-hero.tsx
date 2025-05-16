@@ -81,7 +81,7 @@ function Hero() {
             </p>
           </div>
           <div className="flex flex-row gap-3">
-            <Link href="https://quantam-path.vercel.app/">
+            <Link href="https://quantum-path.vercel.app/">
             <Button size="lg" className="gap-4">
               Get Started <BookOpen className="w-4 h-4" />
             </Button>
