@@ -45,7 +45,7 @@ export default function Home() {
     { name: "About", url: "#about", icon: Info },
     { name: "Features", url: "#services", icon: Server },
     { name: "FAQ", url: "#faq", icon: MessageCircle },
-    { name: "Plans", url: "#careers", icon: Briefcase },
+    // { name: "Plans", url: "#careers", icon: Briefcase },
     { name: "Contact", url: "#contact", icon: Phone },
   ]
 
